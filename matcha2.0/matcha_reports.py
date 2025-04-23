@@ -8,14 +8,6 @@ import difflib
 from matcha import extract_text_with_positions # Make sure this import works correctly
 
 def generate_comparison_report(old_pdf_path, new_pdf_path, output_folder="comparison_reports"):
-    """
-    Generates a PDF report summarizing the differences between two PDF files.
-
-    Args:
-        old_pdf_path (str): Path to the old PDF file.
-        new_pdf_path (str): Path to the new PDF file.
-        output_folder (str, optional): Folder to save the report. Defaults to "comparison_reports".
-    """
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
